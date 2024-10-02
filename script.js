@@ -8,8 +8,8 @@ const titleContainer = document.querySelector('#charSpecies')
 const imageContainer = document.querySelector('#charImage')
 const statusContainer = document.querySelector('#charStatus')
 const statShow = document.querySelector('.statImageShow')
-// const locationContainer = document.querySelector('#charLocation')
-// const originContainer = document.querySelector('#charOrigin')
+const locationContainer = document.querySelector('#charLocation')
+const originContainer = document.querySelector('#charOrigin')
 const nextButton = document.querySelector('#nextChar')
 const prevButton = document.querySelector('#previousChar')
 const soundButton = document.querySelector('#soundButton')
@@ -44,11 +44,11 @@ button.addEventListener('click',  async () => {
     //     statShow.classList.add('.statImageShow')
     // }
 
-    // let charLocate = response.data.results[0].location.name
-    // locationContainer.textContent = (charLocate)
+    let charLocate = response.data.results[0].location.name
+    locationContainer.textContent = (charLocate)
 
-    // let charOrigin = response.data.results[0].origin.name
-    // originContainer.textContent = (charOrigin)
+    let charOrigin = response.data.results[0].origin.name
+    originContainer.textContent = (charOrigin)
 
     let charImage = response.data.results[0].image
     imageContainer.setAttribute('src', charImage)
@@ -63,6 +63,8 @@ button.addEventListener('click',  async () => {
         nameContainer.textContent = (response.data.results[currentIndex].name)
         titleContainer.textContent = (response.data.results[currentIndex].species)
         statusContainer.textContent = (response.data.results[currentIndex].status)
+        locationContainer.textcontent = (response.data.results[currentIndex].location.name)
+        originContainer.textContent = (response.data.results[currentIndex].origin.name)
         imageContainer.setAttribute('src',  response.data.results[currentIndex].image)
     })
     // let prevIndex = 0    
@@ -75,6 +77,8 @@ button.addEventListener('click',  async () => {
         nameContainer.textContent = (response.data.results[currentIndex].name)
         titleContainer.textContent = (response.data.results[currentIndex].species)
         statusContainer.textContent = (response.data.results[currentIndex].status)
+        locationContainer.textcontent = (response.data.results[currentIndex].location.name)
+        originContainer.textContent = (response.data.results[currentIndex].origin.name)
         imageContainer.setAttribute('src',  response.data.results[currentIndex].image)
     })
     
