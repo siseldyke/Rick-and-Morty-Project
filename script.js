@@ -28,6 +28,9 @@ button.addEventListener('click', async () => {
     let charSpecies = response.data.results[0].species
     titleContainer.textContent=(charSpecies)
 
+    let charStatus = response.data.results[0].status
+    statusContainer.textContent=(charStatus)
+
     // let charLocate = response.data.results[0].location.name
     // locationContainer.textContent = (charLocate)
 
