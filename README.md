@@ -10,4 +10,6 @@ add character location
 show list of episodes characters are in
 
 **make previous, next character button(s)**
+**random rick and morty sound button**
+**possibly effects on prev/next buttons**
 **make a random character button**

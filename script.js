@@ -8,15 +8,17 @@ const titleContainer = document.querySelector('#charSpecies')
 const imageContainer = document.querySelector('#charImage')
 const statusContainer = document.querySelector('#charStatus')
 const statShow = document.querySelector('.statImageShow')
-const locationContainer = document.querySelector('#charLocation')
-const originContainer = document.querySelector('#charOrigin')
+// const locationContainer = document.querySelector('#charLocation')
+// const originContainer = document.querySelector('#charOrigin')
 const nextButton = document.querySelector('#nextChar')
 const prevButton = document.querySelector('#previousChar')
-
-
+const soundButton = document.querySelector('#soundButton')
 
 
 // functions
+
+
+
 
 button.addEventListener('click',  async () => {
     let name = input.value
@@ -57,25 +59,39 @@ button.addEventListener('click',  async () => {
     
     nextButton.addEventListener('click' , async() =>{
         currentIndex = (currentIndex + 1)
+        console.log(currentIndex)
         nameContainer.textContent = (response.data.results[currentIndex].name)
         titleContainer.textContent = (response.data.results[currentIndex].species)
         statusContainer.textContent = (response.data.results[currentIndex].status)
         imageContainer.setAttribute('src',  response.data.results[currentIndex].image)
-    
-    let prevIndex = 0    
+    })
+    // let prevIndex = 0    
     prevButton.addEventListener('click', async() =>{
-        prevIndex = (currentIndex - 1)
-        nameContainer.textContent = (response.data.results[prevIndex].name)
-        titleContainer.textContent = (response.data.results[prevIndex].species)
-        statusContainer.textContent = (response.data.results[prevIndex].status)
-        imageContainer.setAttribute('src',  response.data.results[prevIndex].image)
+       console.log(currentIndex)
+        if (currentIndex > 0){
+            currentIndex = (currentIndex - 1)
+        }
+        console.log(currentIndex)
+        nameContainer.textContent = (response.data.results[currentIndex].name)
+        titleContainer.textContent = (response.data.results[currentIndex].species)
+        statusContainer.textContent = (response.data.results[currentIndex].status)
+        imageContainer.setAttribute('src',  response.data.results[currentIndex].image)
     })
     
-    })
+    
+    // const sounds =[
+    //     soundOne = ('https://www.myinstants.com/en/instant/oooweee-76745/?utm_source=copy&utm_medium=share'),
+    //     soundTwo = ('https://www.myinstants.com/en/instant/wubba-lubba-dub-dub-2-23931/?utm_source=copy&utm_medium=share'),
+    //     soundThree = ('https://www.myinstants.com/en/instant/oh-jeez-rick-56706/?utm_source=copy&utm_medium=share'),
+        
+    // ] 
+    // let allSounds = 0
+    
+    // soundButton.addEventListener('click', () => {
+    //      allSounds = (allSounds + 1)
+    //      console.log(sounds[allSounds])
+    // })
+
 
 })
-
-
-
-
     

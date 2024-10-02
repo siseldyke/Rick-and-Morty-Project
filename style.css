@@ -7,9 +7,12 @@ body{
     background-image: url("https://awwsomeh.wordpress.com/wp-content/uploads/2017/12/s2e10_screaming_sun.png");
   }
 
-#Creepster{
-    
-  }
+#searchButton{
+display: flex;
+flex-direction: row;
+
+}
+
 #pageTop{
     display: flex;
     justify-content: center;
