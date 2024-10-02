@@ -9,6 +9,8 @@ const imageContainer = document.querySelector('#charImage')
 const statusContainer = document.querySelector('#charStatus')
 const locationContainer = document.querySelector('#charLocation')
 const originContainer = document.querySelector('#charOrigin')
+const nextButton = document.querySelector('#nextChar')
+const prevButton = document.querySelector('#previousChar')
 
 
 

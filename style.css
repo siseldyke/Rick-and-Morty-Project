@@ -16,3 +16,7 @@ body{
     display: flex;
     justify-content: center;
 }
+#addButtons{
+    display: flex;
+    flex-direction: row;
+}
