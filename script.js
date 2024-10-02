@@ -52,7 +52,7 @@ button.addEventListener('click',  async () => {
     imageContainer.setAttribute('src', charImage)
 
 
-    let charIndex = response.data.results[0].id
+    
     let currentIndex = 0;
     
     nextButton.addEventListener('click' , async() =>{
@@ -62,6 +62,14 @@ button.addEventListener('click',  async () => {
         statusContainer.textContent = (response.data.results[currentIndex].status)
         imageContainer.setAttribute('src',  response.data.results[currentIndex].image)
     
+    let prevIndex = 0    
+    prevButton.addEventListener('click', async() =>{
+        prevIndex = (currentIndex - 1)
+        nameContainer.textContent = (response.data.results[prevIndex].name)
+        titleContainer.textContent = (response.data.results[prevIndex].species)
+        statusContainer.textContent = (response.data.results[prevIndex].status)
+        imageContainer.setAttribute('src',  response.data.results[prevIndex].image)
+    })
     
     })
 
