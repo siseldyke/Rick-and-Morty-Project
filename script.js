@@ -43,3 +43,9 @@ button.addEventListener('click', async () => {
     imageContainer.setAttribute('src', charImage)
 })
 
+    // let next = document.querySelector("next").textContent;
+    // let currentIndex =0;
+    // nextButton.addEventListener('click' , async() =>{
+    //     currentIndex = (currentIndex + 1) % next.length;
+    //     document.querySelector('next').textContent = next.charAt(currentIndex)
+    // })

@@ -9,4 +9,5 @@ add character location
 
 show list of episodes characters are in
 
+**make previous, next character button(s)**
 **make a random character button**
