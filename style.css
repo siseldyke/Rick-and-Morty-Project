@@ -52,8 +52,8 @@ flex-direction: row;
 #locationData{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
+    justify-content: space-around;
+    
 }
 #addButtons{
     display: flex;
