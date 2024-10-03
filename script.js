@@ -44,12 +44,12 @@ button.addEventListener('click',  async () => {
     let charLocate = response.data.results[0].location.name
     locationContainer.textContent = (charLocate)
 
-    locationTitle.textContent =`Current Location: `
+    locationTitle.textContent =`Current Location:  `
 
     let charOrigin = response.data.results[0].origin.name
     originContainer.textContent = (charOrigin)
 
-    originTitle.textContent =`Origin: `
+    originTitle.textContent =`  Origin: `
 
     let charImage = response.data.results[0].image
     imageContainer.setAttribute('src', charImage)
