@@ -7,7 +7,12 @@ body{
     background-image: url("https://awwsomeh.wordpress.com/wp-content/uploads/2017/12/s2e10_screaming_sun.png");
   }
 
-
+@media screen and (max-width: 400px){
+    body{
+        display:flex;
+        flex-direction: column;
+    }
+}   
 
 #pageTop{
     display: flex;
@@ -21,6 +26,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 #searchButton{
     display: flex;
     flex-direction: row;
