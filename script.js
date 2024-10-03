@@ -1,7 +1,7 @@
 //variables
 
 
-const button = document.querySelector('#submitButton')
+const button = document.querySelector('#rickSearch')
 const input = document.querySelector('#textInput')
 const nameContainer = document.querySelector('#charName')
 const titleContainer = document.querySelector('#charSpecies')

@@ -7,11 +7,7 @@ body{
     background-image: url("https://awwsomeh.wordpress.com/wp-content/uploads/2017/12/s2e10_screaming_sun.png");
   }
 
-#searchButton{
-display: flex;
-flex-direction: row;
 
-}
 
 #pageTop{
     display: flex;
@@ -25,11 +21,31 @@ flex-direction: row;
     display: flex;
     justify-content: center;
 }
+#searchButton{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+#textInput{
+    max-height: 20px;
+}
 #submitButton{
     border: none;
     cursor: pointer;
     appearance: none;
     background: inherit;
+    font-family: 'Creepster';
+    color: white;
+    -webkit-text-stroke: 1px black;
+    
+}
+#rickSearch #submitButton{
+    position: absolute;
+    left: 70%;
+}
+#rickSearch:hover{
+    opacity: 50%;
+    
 }
 #rickBinoc{
     width: 100px;
