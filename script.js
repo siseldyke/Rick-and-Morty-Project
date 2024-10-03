@@ -59,7 +59,9 @@ button.addEventListener('click',  async () => {
     let currentIndex = 0;
     
     nextButton.addEventListener('click' , async() =>{
-        currentIndex = (currentIndex + 1)
+            if (currentIndex < 19){
+            currentIndex = (currentIndex + 1)
+            }
         nameContainer.textContent = (response.data.results[currentIndex].name)
         titleContainer.textContent = (response.data.results[currentIndex].species)
         statusContainer.textContent = (response.data.results[currentIndex].status)
