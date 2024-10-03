@@ -25,6 +25,16 @@ flex-direction: row;
     display: flex;
     justify-content: center;
 }
+#submitButton{
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background: inherit;
+}
+#rickBinoc{
+    width: 100px;
+    height: 100px;
+}
 #charName{
     font-size: 40px;
     color: aqua;
@@ -35,10 +45,7 @@ flex-direction: row;
     display: flex;
     justify-content: center;
 }
-/* .statImageShow{
-    display: flex;
-    justify-content: center;
-} */
+
 #charHeadshot{
     display: flex;
     justify-content: center;
@@ -53,7 +60,8 @@ flex-direction: row;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    color: white;
+    -webkit-text-stroke: 1px black;
 }
 #addButtons{
     display: flex;
