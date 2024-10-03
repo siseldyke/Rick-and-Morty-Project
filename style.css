@@ -104,3 +104,19 @@ body{
     background-size: cover;
     background-position: 100%;
 }
+
+#previousChar{
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background: inherit;
+    font-family: 'Creepster';
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+#previousChar:hover{
+    background-image: url('https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif');
+    background-size: cover;
+    background-position: 100%;
+}
